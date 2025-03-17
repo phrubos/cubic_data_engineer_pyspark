@@ -1,0 +1,23 @@
+[project]
+name = "cubic-data-engineer-pyspark"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "phrubos",email = "peter.hrubos.szte@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pyspark (>=3.5.5,<4.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "cubic_data_engineer_pyspark", from = "src"}]
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
